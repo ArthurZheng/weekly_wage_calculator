@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "JuniorEmployee.h"
 #import "AdultEmployee.h"
+#import "JuniorHourlyRate.h"
+#import "AdultHourlyRate.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -26,6 +28,20 @@ int main(int argc, const char * argv[]) {
         [sen setName:@"Sen Zheng" andPosition:@"Senior Manager"];
         [sen setAge:35];
         [sen print];
+        
+        NSLog(@"\n\nGetting Junior Hourly Rate......................");
+        JuniorHourlyRate *juniorRate = [[JuniorHourlyRate alloc] init];
+        
+        [juniorRate setBaseHourlyRate:16.25];
+        [juniorRate print];
+        
+        
+        NSLog(@"\n\nGetting Adult Hourly Rate......................");
+        AdultHourlyRate *adultRate = [[AdultHourlyRate alloc] init];
+        
+        [adultRate setBaseHourlyRate:23.15];
+        [adultRate print];
+        
         
         
     }

@@ -11,6 +11,9 @@
 		D7CC36001B46B2D7006EB035 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC35FF1B46B2D7006EB035 /* Employee.m */; };
 		D7CC36031B46B491006EB035 /* JuniorEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36021B46B491006EB035 /* JuniorEmployee.m */; };
 		D7CC36061B46B764006EB035 /* AdultEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36051B46B764006EB035 /* AdultEmployee.m */; };
+		D7CC36091B46BA5B006EB035 /* HourlyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36081B46BA5B006EB035 /* HourlyRate.m */; };
+		D7CC360C1B46BB0C006EB035 /* JuniorHourlyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC360B1B46BB0C006EB035 /* JuniorHourlyRate.m */; };
+		D7CC360F1B46BB72006EB035 /* AdultHourlyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC360E1B46BB72006EB035 /* AdultHourlyRate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,12 @@
 		D7CC36021B46B491006EB035 /* JuniorEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuniorEmployee.m; sourceTree = "<group>"; };
 		D7CC36041B46B764006EB035 /* AdultEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdultEmployee.h; sourceTree = "<group>"; };
 		D7CC36051B46B764006EB035 /* AdultEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdultEmployee.m; sourceTree = "<group>"; };
+		D7CC36071B46BA5B006EB035 /* HourlyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HourlyRate.h; sourceTree = "<group>"; };
+		D7CC36081B46BA5B006EB035 /* HourlyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourlyRate.m; sourceTree = "<group>"; };
+		D7CC360A1B46BB0C006EB035 /* JuniorHourlyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuniorHourlyRate.h; sourceTree = "<group>"; };
+		D7CC360B1B46BB0C006EB035 /* JuniorHourlyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuniorHourlyRate.m; sourceTree = "<group>"; };
+		D7CC360D1B46BB72006EB035 /* AdultHourlyRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdultHourlyRate.h; sourceTree = "<group>"; };
+		D7CC360E1B46BB72006EB035 /* AdultHourlyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdultHourlyRate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,12 @@
 				D7CC35FF1B46B2D7006EB035 /* Employee.m */,
 				D7CC36011B46B491006EB035 /* JuniorEmployee.h */,
 				D7CC36021B46B491006EB035 /* JuniorEmployee.m */,
+				D7CC36071B46BA5B006EB035 /* HourlyRate.h */,
+				D7CC36081B46BA5B006EB035 /* HourlyRate.m */,
+				D7CC360A1B46BB0C006EB035 /* JuniorHourlyRate.h */,
+				D7CC360B1B46BB0C006EB035 /* JuniorHourlyRate.m */,
+				D7CC360D1B46BB72006EB035 /* AdultHourlyRate.h */,
+				D7CC360E1B46BB72006EB035 /* AdultHourlyRate.m */,
 			);
 			path = weekly_wage_calculator;
 			sourceTree = "<group>";
@@ -136,7 +151,10 @@
 				D7CC36061B46B764006EB035 /* AdultEmployee.m in Sources */,
 				D7CC36031B46B491006EB035 /* JuniorEmployee.m in Sources */,
 				D7CC35F81B46B218006EB035 /* main.m in Sources */,
+				D7CC36091B46BA5B006EB035 /* HourlyRate.m in Sources */,
+				D7CC360F1B46BB72006EB035 /* AdultHourlyRate.m in Sources */,
 				D7CC36001B46B2D7006EB035 /* Employee.m in Sources */,
+				D7CC360C1B46BB0C006EB035 /* JuniorHourlyRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
