@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D7CC35F81B46B218006EB035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC35F71B46B218006EB035 /* main.m */; };
+		D7CC36001B46B2D7006EB035 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC35FF1B46B2D7006EB035 /* Employee.m */; };
+		D7CC36031B46B491006EB035 /* JuniorEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36021B46B491006EB035 /* JuniorEmployee.m */; };
+		D7CC36061B46B764006EB035 /* AdultEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36051B46B764006EB035 /* AdultEmployee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		D7CC35F41B46B218006EB035 /* weekly_wage_calculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = weekly_wage_calculator; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7CC35F71B46B218006EB035 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7CC35FE1B46B2D7006EB035 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		D7CC35FF1B46B2D7006EB035 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		D7CC36011B46B491006EB035 /* JuniorEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuniorEmployee.h; sourceTree = "<group>"; };
+		D7CC36021B46B491006EB035 /* JuniorEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuniorEmployee.m; sourceTree = "<group>"; };
+		D7CC36041B46B764006EB035 /* AdultEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdultEmployee.h; sourceTree = "<group>"; };
+		D7CC36051B46B764006EB035 /* AdultEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdultEmployee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				D7CC35F71B46B218006EB035 /* main.m */,
+				D7CC36041B46B764006EB035 /* AdultEmployee.h */,
+				D7CC36051B46B764006EB035 /* AdultEmployee.m */,
+				D7CC35FE1B46B2D7006EB035 /* Employee.h */,
+				D7CC35FF1B46B2D7006EB035 /* Employee.m */,
+				D7CC36011B46B491006EB035 /* JuniorEmployee.h */,
+				D7CC36021B46B491006EB035 /* JuniorEmployee.m */,
 			);
 			path = weekly_wage_calculator;
 			sourceTree = "<group>";
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CC36061B46B764006EB035 /* AdultEmployee.m in Sources */,
+				D7CC36031B46B491006EB035 /* JuniorEmployee.m in Sources */,
 				D7CC35F81B46B218006EB035 /* main.m in Sources */,
+				D7CC36001B46B2D7006EB035 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
