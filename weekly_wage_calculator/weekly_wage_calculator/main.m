@@ -10,6 +10,7 @@
 #import "Employee.h"
 #import "HourlyRate.h"
 #import "WorkRecord.h"
+#import "TaxWithholding.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -39,8 +40,17 @@ int main(int argc, const char * argv[]) {
         // adding members hourlyRate, workRecord to employee object;
         jun.hourlyRate = hourlyRate;
         jun.workRecord = workRecord;
-        
         [jun print];
+
+        
+        // initialzing a TaxWithholding object;
+        TaxWithholding *taxWithholding = [[TaxWithholding alloc] init];
+        
+        taxWithholding.worker = jun;
+        
+        NSLog(@"Generating Payslip...........");
+        [taxWithholding generatePaySlip];
+        
 
         
         

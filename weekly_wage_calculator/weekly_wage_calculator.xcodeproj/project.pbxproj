@@ -11,6 +11,7 @@
 		D7CC36001B46B2D7006EB035 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC35FF1B46B2D7006EB035 /* Employee.m */; };
 		D7CC36091B46BA5B006EB035 /* HourlyRate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36081B46BA5B006EB035 /* HourlyRate.m */; };
 		D7CC36121B474E77006EB035 /* WorkRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36111B474E77006EB035 /* WorkRecord.m */; };
+		D7CC36151B477AF4006EB035 /* TaxWithholding.m in Sources */ = {isa = PBXBuildFile; fileRef = D7CC36141B477AF4006EB035 /* TaxWithholding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		D7CC36081B46BA5B006EB035 /* HourlyRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HourlyRate.m; sourceTree = "<group>"; };
 		D7CC36101B474E77006EB035 /* WorkRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkRecord.h; sourceTree = "<group>"; };
 		D7CC36111B474E77006EB035 /* WorkRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkRecord.m; sourceTree = "<group>"; };
+		D7CC36131B477AF4006EB035 /* TaxWithholding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxWithholding.h; sourceTree = "<group>"; };
+		D7CC36141B477AF4006EB035 /* TaxWithholding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxWithholding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				D7CC36081B46BA5B006EB035 /* HourlyRate.m */,
 				D7CC36101B474E77006EB035 /* WorkRecord.h */,
 				D7CC36111B474E77006EB035 /* WorkRecord.m */,
+				D7CC36131B477AF4006EB035 /* TaxWithholding.h */,
+				D7CC36141B477AF4006EB035 /* TaxWithholding.m */,
 			);
 			path = weekly_wage_calculator;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			files = (
 				D7CC36121B474E77006EB035 /* WorkRecord.m in Sources */,
 				D7CC35F81B46B218006EB035 /* main.m in Sources */,
+				D7CC36151B477AF4006EB035 /* TaxWithholding.m in Sources */,
 				D7CC36091B46BA5B006EB035 /* HourlyRate.m in Sources */,
 				D7CC36001B46B2D7006EB035 /* Employee.m in Sources */,
 			);
