@@ -10,10 +10,10 @@
 
 @implementation HourlyRate
 
-@synthesize baseHourlyRate, saturdayHourlyRate, sundayHourlyRate, publicHolidayHourlyRate;
+@synthesize weekdayHourlyRate, saturdayHourlyRate, sundayHourlyRate, publicHolidayHourlyRate;
 
 -(void) print {
-    NSLog(@"The base hourly rate is %f.", baseHourlyRate);
+    NSLog(@"The base hourly rate is %f.", weekdayHourlyRate);
 }
 
 @end

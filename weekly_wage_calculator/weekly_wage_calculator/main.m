@@ -7,40 +7,41 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JuniorEmployee.h"
-#import "AdultEmployee.h"
-#import "JuniorHourlyRate.h"
-#import "AdultHourlyRate.h"
+#import "Employee.h"
+#import "HourlyRate.h"
+#import "WorkRecord.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"------------- Weekly Wage Calculator Program ------------\n\n");
         
-        NSLog(@"Creating a Junior Emlpyee Object....................");
-        JuniorEmployee *jun = [[JuniorEmployee alloc] init];
+        NSLog(@"Loading the Weekly Wage Çalculator Program............");
+       
+        // initialzing an employee object;
+        Employee *jun = [[Employee alloc] init];
         [jun setName:@"Jun Zheng" andPosition:@"Manager"];
-        [jun setAge:15];
+        [jun setAge:30];
+        
+        // initializing an hourly rate object;
+        HourlyRate *hourlyRate = [[HourlyRate alloc] init];
+        [hourlyRate setWeekdayHourlyRate: 23.15];
+        [hourlyRate setSaturdayHourlyRate:25.01];
+        [hourlyRate setSundayHourlyRate:37.05];
+        [hourlyRate setPublicHolidayHourlyRate:23.15 * 2];
+        
+        // initializing a work record object;
+        WorkRecord *workRecord = [[WorkRecord alloc] init];
+        [workRecord setWeekdayHours:10.5];
+        [workRecord setSaturdayHours:4.0];
+        [workRecord setSundayHours: 5.0];
+        
+        // adding members hourlyRate, workRecord to employee object;
+        jun.hourlyRate = hourlyRate;
+        jun.workRecord = workRecord;
+        
         [jun print];
-        
-        NSLog(@"\n\nCreating an Adult Employee Object...............");
-        AdultEmployee *sen = [[AdultEmployee alloc] init];
-        [sen setName:@"Sen Zheng" andPosition:@"Senior Manager"];
-        [sen setAge:35];
-        [sen print];
-        
-        NSLog(@"\n\nGetting Junior Hourly Rate......................");
-        JuniorHourlyRate *juniorRate = [[JuniorHourlyRate alloc] init];
-        
-        [juniorRate setBaseHourlyRate:16.25];
-        [juniorRate print];
-        
-        
-        NSLog(@"\n\nGetting Adult Hourly Rate......................");
-        AdultHourlyRate *adultRate = [[AdultHourlyRate alloc] init];
-        
-        [adultRate setBaseHourlyRate:23.15];
-        [adultRate print];
+
         
         
         

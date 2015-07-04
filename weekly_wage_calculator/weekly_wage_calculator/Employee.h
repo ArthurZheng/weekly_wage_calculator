@@ -7,14 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HourlyRate.h"
+#import "WorkRecord.h"
 
 @interface Employee : NSObject
 
 @property NSString *name, *position;
 @property int age;
+@property HourlyRate *hourlyRate;
+@property WorkRecord *workRecord;
 
 -(void) setName: (NSString *) name andPosition: (NSString *) position;
-
+-(double) calculateWeekDayEarnings;
+-(double) calculateSaturdayEarnings;
+-(double) calculateSundayEarnings;
+-(double) calculatePublicHolidayEarnings;
+-(double) calculateWeeklyEarnings;
 -(void) print;
 
 @end

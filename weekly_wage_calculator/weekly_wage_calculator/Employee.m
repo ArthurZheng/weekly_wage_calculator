@@ -10,15 +10,36 @@
 
 @implementation Employee
 
-@synthesize name, position, age;
+@synthesize name, position, age, hourlyRate, workRecord;
 
 -(void) setName:(NSString *)name andPosition:(NSString *)position {
     self.name = name;
     self.position = position;
 }
 
+-(double) calculateWeekDayEarnings {
+    return self.workRecord.weekdayHours * self.hourlyRate.weekdayHourlyRate;
+}
+
+-(double) calculateSaturdayEarnings {
+    return self.workRecord.saturdayHours * self.hourlyRate.saturdayHourlyRate;
+}
+
+-(double) calculateSundayEarnings {
+    return self.workRecord.sundayHours * self.hourlyRate.sundayHourlyRate;
+}
+
+-(double) calculatePublicHolidayEarnings {
+    return self.workRecord.publicHolidayHours * self.hourlyRate.publicHolidayHourlyRate;
+}
+
+-(double) calculateWeeklyEarnings {
+    return self.calculateWeekDayEarnings + self.calculateSaturdayEarnings + self.calculateSundayEarnings + self.calculatePublicHolidayEarnings;
+}
+
 -(void) print {
     NSLog(@"Employee details: name - %@, age - %i, position - %@.", name, age, position);
+    NSLog(@"weekday hours - %f, Saturday hours - %f, Sunday hours %f, public holiday hours -%f, weekly earnings %f.", self.workRecord.weekdayHours, self.workRecord.saturdayHours, self.workRecord.sundayHours, self.workRecord.publicHolidayHours, self.calculateWeekDayEarnings);
 }
 
 @end
