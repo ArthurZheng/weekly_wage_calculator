@@ -15,11 +15,13 @@ a and b are the values of the coefficients for each set of formulas for each ran
 //
 
 #import "TaxWithholding.h"
+#import "Employee.h"
+#import "WorkRecord.h"
 
 @implementation TaxWithholding
 
-@synthesize coefficientA, coefficientB, taxApplicable;
-@synthesize worker;
+//@synthesize coefficientA, coefficientB, taxApplicable;
+//@synthesize worker;
 
 // set coefficient a and b based on the weekly earnings;
 -(void)setCoefficientACoefficientB {

@@ -2,7 +2,7 @@
 //  WorkRecord.h
 //  weekly_wage_calculator
 //
-//  Created by Andrew Spinks on 4/07/2015.
+//  Created by Jun Zheng on 4/07/2015.
 //  Copyright (c) 2015 Techtransformers. All rights reserved.
 //
 
@@ -10,7 +10,10 @@
 
 @interface WorkRecord : NSObject
 
-@property double weekdayHours, saturdayHours, sundayHours, publicHolidayHours;
+@property double weekdayHours;
+@property double saturdayHours;
+@property double sundayHours;
+@property double publicHolidayHours;
 
 //-(void) print;
 

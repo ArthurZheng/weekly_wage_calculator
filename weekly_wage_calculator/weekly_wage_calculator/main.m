@@ -52,10 +52,6 @@ int main(int argc, const char * argv[]) {
         [taxWithholding setCoefficientACoefficientB];
         [taxWithholding generatePaySlip];
         
-
-        
-        
-        
     }
     return 0;
 }

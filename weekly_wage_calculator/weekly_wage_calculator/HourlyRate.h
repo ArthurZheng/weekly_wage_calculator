@@ -10,7 +10,10 @@
 
 @interface HourlyRate : NSObject
 
-@property double weekdayHourlyRate, saturdayHourlyRate, sundayHourlyRate, publicHolidayHourlyRate;
+@property double weekdayHourlyRate;
+@property double saturdayHourlyRate;
+@property double sundayHourlyRate;
+@property double publicHolidayHourlyRate;
 
 -(void) print;
 

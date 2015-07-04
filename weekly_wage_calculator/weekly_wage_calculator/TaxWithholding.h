@@ -2,16 +2,19 @@
 //  TaxWithholding.h
 //  weekly_wage_calculator
 //
-//  Created by Andrew Spinks on 4/07/2015.
+//  Created by Jun Zheng on 4/07/2015.
 //  Copyright (c) 2015 Techtransformers. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Employee.h"
+
+@class Employee;
 
 @interface TaxWithholding : NSObject
 
-@property double coefficientA, coefficientB, taxApplicable;
+@property double coefficientA;
+@property double coefficientB;
+//@property double taxApplicable;
 @property Employee *worker;
 
 -(void) setCoefficientACoefficientB;
@@ -20,4 +23,5 @@
 -(double) calculatePAYGWithholding;
 -(double) calculateNetPay;
 -(void) generatePaySlip;
+
 @end

@@ -7,10 +7,10 @@
 //
 
 #import "Employee.h"
+#import "HourlyRate.h"
+#import "WorkRecord.h"
 
 @implementation Employee
-
-@synthesize name, position, age, hourlyRate, workRecord;
 
 -(void) setName:(NSString *)name andPosition:(NSString *)position {
     self.name = name;
@@ -38,7 +38,7 @@
 }
 
 -(void) print {
-    NSLog(@"Employee details: name - %@, age - %i, position - %@.", name, age, position);
+    NSLog(@"Employee details: name - %@, age - %i, position - %@.", _name, _age, _position);
     NSLog(@"weekday hours - %f, Saturday hours - %f, Sunday hours %f, public holiday hours -%f, weekly earnings %f.", self.workRecord.weekdayHours, self.workRecord.saturdayHours, self.workRecord.sundayHours, self.workRecord.publicHolidayHours, self.calculateWeekDayEarnings);
 }
 
