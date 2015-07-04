@@ -25,29 +25,33 @@ a and b are the values of the coefficients for each set of formulas for each ran
 -(void)setCoefficientACoefficientB {
     double finalWeeklyEarnings = self.calculateWeeklyEarningsForFormula;
     
-    if (finalWeeklyEarnings < 395 && finalWeeklyEarnings >=0) {
+    if (finalWeeklyEarnings <= 355 && finalWeeklyEarnings >=0) {
         self.coefficientA = 0.0;
         self.coefficientB = 0.0;
     }
-    else if (finalWeeklyEarnings < 493) {
+    else if (finalWeeklyEarnings <= 395) {
         self.coefficientA = 0.1900;
         self.coefficientB = 67.4635;
     }
-    else if (finalWeeklyEarnings < 711) {
+    else if (finalWeeklyEarnings <= 493) {
         self.coefficientA = 0.2900;
         self.coefficientB = 106.9673;
     }
-    else if (finalWeeklyEarnings < 1282) {
+    else if (finalWeeklyEarnings <= 711) {
         self.coefficientA = 0.2100;
         self.coefficientB = 67.4642;
     }
-    else if (finalWeeklyEarnings < 1538) {
+    else if (finalWeeklyEarnings <= 1282) {
         self.coefficientA = 0.3477;
         self.coefficientB = 165.4431;
     }
-    else if (finalWeeklyEarnings < 3461) {
+    else if (finalWeeklyEarnings <= 1538) {
         self.coefficientA = 0.3450;
         self.coefficientB = 161.9815;
+    }
+    else if (finalWeeklyEarnings <= 3461) {
+        self.coefficientA = 0.3900;
+        self.coefficientB = 231.2123;
     }
     else {
         self.coefficientA = 0.4900;

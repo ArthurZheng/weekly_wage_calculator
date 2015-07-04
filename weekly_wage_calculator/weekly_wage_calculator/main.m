@@ -49,6 +49,7 @@ int main(int argc, const char * argv[]) {
         taxWithholding.worker = jun;
         
         NSLog(@"Generating Payslip...........");
+        [taxWithholding setCoefficientACoefficientB];
         [taxWithholding generatePaySlip];
         
 
